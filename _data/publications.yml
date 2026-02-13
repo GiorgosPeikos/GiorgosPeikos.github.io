@@ -1,0 +1,42 @@
+﻿top_cited:
+  - title: "TITLE (Top cited #1)"
+    authors: "Authors"
+    venue: "Venue"
+    year: 202X
+    citations: 0
+    links:
+      - label: "PDF"
+        url: ""
+      - label: "Code"
+        url: ""
+  - title: "TITLE (Top cited #2)"
+    authors: "Authors"
+    venue: "Venue"
+    year: 202X
+    citations: 0
+    links: []
+  - title: "TITLE (Top cited #3)"
+    authors: "Authors"
+    venue: "Venue"
+    year: 202X
+    citations: 0
+    links: []
+
+most_recent:
+  - title: "TITLE (Most recent #1)"
+    authors: "Authors"
+    venue: "Venue"
+    year: 202X
+    links:
+      - label: "PDF"
+        url: ""
+  - title: "TITLE (Most recent #2)"
+    authors: "Authors"
+    venue: "Venue"
+    year: 202X
+    links: []
+  - title: "TITLE (Most recent #3)"
+    authors: "Authors"
+    venue: "Venue"
+    year: 202X
+    links: []
