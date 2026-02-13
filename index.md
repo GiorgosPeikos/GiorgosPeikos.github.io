@@ -4,7 +4,7 @@ layout: default
 
 <div id="top" class="card hero">
   <div class="avatar">
-    <img src="/assets/img/profile.jpg" alt="Profile photo" onerror="this.style.display='none'; this.parentElement.innerHTML='<div style=&quot;padding:14px&quot; class=&quot;muted small&quot;>Add assets/img/profile.jpg</div>';">
+    <img src="/assets/img/profile.png" alt="Profile photo" onerror="this.style.display='none'; this.parentElement.innerHTML='<div style=&quot;padding:14px&quot; class=&quot;muted small&quot;>Add assets/img/profile.png</div>';">
   </div>
   <div>
     <h1>Giorgos Peikos</h1>
@@ -106,3 +106,5 @@ layout: default
     LinkedIn is the best contact channel: <a href="https://www.linkedin.com/in/peikosgeorgios/" target="_blank" rel="noreferrer">/in/peikosgeorgios</a>
   </p>
 </div>
+
+
