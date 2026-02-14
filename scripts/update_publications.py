@@ -9,7 +9,15 @@ API_BASE = "https://api.semanticscholar.org/graph/v1"
 S2_AUTHOR_ID = os.getenv("S2_AUTHOR_ID", "").strip()
 API_KEY = os.getenv("S2_API_KEY", "").strip()
 
-FIELDS = "papers.title,papers.year,papers.venue,papers.citationCount,papers.url,papers.authors"
+FIELDS = (
+    "papers.title,"
+    "papers.year,"
+    "papers.venue,"
+    "papers.citationCount,"
+    "papers.url,"
+    "papers.authors,"
+    "papers.externalIds"
+)
 
 
 def http_get(url: str) -> dict:
@@ -31,39 +39,79 @@ def author_search(query: str) -> str:
     raise RuntimeError("Could not find an authorId in Semantic Scholar search results.")
 
 
+def safe_int(x) -> int:
+    try:
+        return int(x or 0)
+    except Exception:
+        return 0
+
+
+def is_arxiv_venue(p: dict) -> bool:
+    venue = (p.get("venue") or "").strip().lower()
+    return venue.startswith("arxiv")
+
+
+def has_doi(p: dict) -> bool:
+    ext = p.get("externalIds") or {}
+    return bool((ext.get("DOI") or "").strip())
+
+
+def is_published_venue(p: dict) -> bool:
+    """
+    Keep papers that look like conference/journal publications.
+
+    Accept if:
+    - venue is present and not arXiv
+      OR
+    - DOI exists and not arXiv
+    """
+    venue = (p.get("venue") or "").strip()
+    if venue and not is_arxiv_venue(p):
+        return True
+    if has_doi(p) and not is_arxiv_venue(p):
+        return True
+    return False
+
+
 def dump_yaml(top_cited, most_recent) -> str:
-    def esc(s):
+    def esc(s: str) -> str:
         return (s or "").replace('"', '\\"')
 
-    def links_for(p):
+    def links_for(p: dict) -> str:
         url = p.get("url") or ""
         if url:
-            return f'    links:\n      - label: "Semantic Scholar"\n        url: "{esc(url)}"\n'
-        return '    links: []\n'
+            return (
+                '    links:\n'
+                '      - label: "Semantic Scholar"\n'
+                f'        url: "{esc(url)}"\n'
+            )
+        return "    links: []\n"
 
     out = []
     out.append("top_cited:")
     for p in top_cited:
-        authors = ", ".join([a.get("name","") for a in (p.get("authors") or [])][:6])
+        authors = ", ".join([a.get("name", "") for a in (p.get("authors") or [])][:6])
         out.append(f'  - title: "{esc(p.get("title"))}"')
         out.append(f'    authors: "{esc(authors)}"')
         out.append(f'    venue: "{esc(p.get("venue"))}"')
-        out.append(f'    year: {int(p.get("year") or 0)}')
-        out.append(f'    citations: {int(p.get("citationCount") or 0)}')
+        out.append(f'    year: {safe_int(p.get("year"))}')
+        # Keep citations in YAML only if you still want to rank in the UI.
+        # If you want, we can remove it completely.
+        out.append(f'    citations: {safe_int(p.get("citationCount"))}')
         out.append(links_for(p).rstrip("\n"))
 
     out.append("")
     out.append("most_recent:")
     for p in most_recent:
-        authors = ", ".join([a.get("name","") for a in (p.get("authors") or [])][:6])
+        authors = ", ".join([a.get("name", "") for a in (p.get("authors") or [])][:6])
         out.append(f'  - title: "{esc(p.get("title"))}"')
         out.append(f'    authors: "{esc(authors)}"')
         out.append(f'    venue: "{esc(p.get("venue"))}"')
-        out.append(f'    year: {int(p.get("year") or 0)}')
+        out.append(f'    year: {safe_int(p.get("year"))}')
         out.append(links_for(p).rstrip("\n"))
 
     out.append("")
-    out.append(f'# updated: {datetime.utcnow().isoformat()}Z')
+    out.append(f"# updated: {datetime.utcnow().isoformat()}Z")
     return "\n".join(out) + "\n"
 
 
@@ -78,8 +126,18 @@ def main():
     papers = data.get("papers") or []
     papers = [p for p in papers if p.get("title") and p.get("year")]
 
-    top_cited = sorted(papers, key=lambda p: (p.get("citationCount") or 0, p.get("year") or 0), reverse=True)[:3]
-    most_recent = sorted(papers, key=lambda p: (p.get("year") or 0, p.get("citationCount") or 0), reverse=True)[:3]
+    top_cited = sorted(
+        papers,
+        key=lambda p: (safe_int(p.get("citationCount")), safe_int(p.get("year"))),
+        reverse=True
+    )[:3]
+
+    published = [p for p in papers if is_published_venue(p)]
+    most_recent = sorted(
+        published,
+        key=lambda p: (safe_int(p.get("year")), safe_int(p.get("citationCount"))),
+        reverse=True
+    )[:3]
 
     os.makedirs("_data", exist_ok=True)
     with open("_data/publications.yml", "w", encoding="utf-8") as f:
