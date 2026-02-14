@@ -76,13 +76,38 @@ layout: default
 
 <div id="projects" class="card section">
   <h2>Projects</h2>
-  {% for pr in site.data.projects.items %}
-  <div class="item">
-    <div class="item-title">{{ pr.title }}</div>
-    <div class="muted small">{{ pr.one_liner }}</div>
-  </div>
+
+  {% assign featured = site.projects | default: empty | sort: "order" %}
+
+  {% if featured.size == 0 %}
+    <div class="muted small">
+      No projects found. Ensure the <code>projects</code> collection is enabled in <code>_config.yml</code>.
+    </div>
+  {% endif %}
+
+  {% for pr in featured limit:3 %}
+    <div class="item">
+      <div class="item-title">
+        <a href="{{ pr.url }}">{{ pr.title }}</a>
+      </div>
+
+      {% if pr.one_liner %}
+        <div class="muted small">{{ pr.one_liner }}</div>
+      {% endif %}
+
+      {% if pr.impact %}
+        <div class="small" style="margin-top:6px;">
+          <span class="muted">Impact:</span> {{ pr.impact }}
+        </div>
+      {% endif %}
+    </div>
   {% endfor %}
+
+  <div class="small" style="margin-top:10px;">
+    <a href="/projects/">View all projects</a>
+  </div>
 </div>
+
 
 <div id="teaching" class="card section">
   <h2>Teaching</h2>

@@ -3,6 +3,7 @@ layout: default
 title: "ANTHEM: Human Centred Medicine"
 one_liner: "Trustworthy health search and privacy preserving clinician in the loop retrieval, developed at UniMiB within the ANTHEM programme."
 order: 1
+impact: "Prototyped and evaluated healthcare AI under real constraints: privacy, low compute, expert oversight, and evidence grounded outputs."
 keywords: ["healthcare AI", "conversational AI", "RAG", "health information retrieval", "clinical trials retrieval", "privacy", "evaluation", "human in the loop"]
 ---
 
