@@ -10,7 +10,7 @@ keywords: ["healthcare AI", "conversational AI", "RAG", "health information retr
 <div class="card section">
   <h1>ANTHEM (UniMiB)</h1>
   <p class="muted">
-    ANTHEM is the programme under which I have been hired at the University of Milano Bicocca to build and evaluate trustworthy AI systems for healthcare.
+    ANTHEM is the programme under which I have been hired as a Fixed-term Researcher (RTDA) at the University of Milano-Bicocca to build and evaluate trustworthy AI systems for healthcare.
   </p>
 
   <h2>Programme</h2>
