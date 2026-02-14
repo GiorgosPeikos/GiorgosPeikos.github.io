@@ -93,40 +93,64 @@ layout: default
     Full list: <a href="https://scholar.google.com/citations?user=-0ObuR0AAAAJ&hl=en" target="_blank" rel="noreferrer">Google Scholar</a>
   </p>
 
-  <div class="pub-grid">
+  {% assign left = site.data.publications.most_recent %}
+  {% assign right = site.data.publications.top_cited %}
 
-    <div class="pub-col">
-      <h3>Most recent</h3>
-      {% for pub in site.data.publications.most_recent %}
-      <div class="item">
-        <div class="item-title">{{ pub.title }}</div>
-        <div class="muted small item-meta">{{ pub.authors }} · {{ pub.venue }} · {{ pub.year }}</div>
-        <div class="small">
-          {% for l in pub.links %}
-            <a href="{{ l.url }}" target="_blank" rel="noreferrer">{{ l.label }}</a>{% unless forloop.last %} · {% endunless %}
-          {% endfor %}
-        </div>
-      </div>
-      {% endfor %}
+  <div class="pub-table">
+    <div class="pub-head">
+      <div class="pub-hcell"><h3>Most recent</h3></div>
+      <div class="pub-hcell"><h3>Most influential</h3></div>
     </div>
 
-    <div class="pub-col">
-      <h3>Most influential</h3>
-      {% for pub in site.data.publications.top_cited %}
-      <div class="item">
-        <div class="item-title">{{ pub.title }}</div>
-        <div class="muted small item-meta">{{ pub.authors }} · {{ pub.venue }} · {{ pub.year }} · Cited by {{ pub.citations }}</div>
-        <div class="small">
-          {% for l in pub.links %}
-            <a href="{{ l.url }}" target="_blank" rel="noreferrer">{{ l.label }}</a>{% unless forloop.last %} · {% endunless %}
-          {% endfor %}
+    {% for i in (0..2) %}
+      {% assign lpub = left[i] %}
+      {% assign rpub = right[i] %}
+
+      <div class="pub-row">
+        <div class="pub-cell">
+          {% if lpub %}
+            <div class="item">
+              <div class="item-title">{{ lpub.title }}</div>
+
+              {% if lpub.impact %}
+                <div class="muted small item-meta">{{ lpub.impact }}</div>
+              {% else %}
+                <div class="muted small item-meta">{{ lpub.authors }} · {{ lpub.venue }} · {{ lpub.year }}</div>
+              {% endif %}
+
+              <div class="small">
+                {% for l in lpub.links %}
+                  <a href="{{ l.url }}" target="_blank" rel="noreferrer">{{ l.label }}</a>{% unless forloop.last %} · {% endunless %}
+                {% endfor %}
+              </div>
+            </div>
+          {% endif %}
+        </div>
+
+        <div class="pub-cell">
+          {% if rpub %}
+            <div class="item">
+              <div class="item-title">{{ rpub.title }}</div>
+
+              {% if rpub.impact %}
+                <div class="muted small item-meta">{{ rpub.impact }}</div>
+              {% else %}
+                <div class="muted small item-meta">{{ rpub.authors }} · {{ rpub.venue }} · {{ rpub.year }}</div>
+              {% endif %}
+
+              <div class="small">
+                {% for l in rpub.links %}
+                  <a href="{{ l.url }}" target="_blank" rel="noreferrer">{{ l.label }}</a>{% unless forloop.last %} · {% endunless %}
+                {% endfor %}
+              </div>
+            </div>
+          {% endif %}
         </div>
       </div>
-      {% endfor %}
-    </div>
-
+    {% endfor %}
   </div>
 </div>
+
 
 <div id="teaching" class="card section">
   <h2>Teaching</h2>

@@ -186,6 +186,13 @@ h2{ margin:0 0 10px 0; font-size:20px; }
   border-top: none;
 }
 
+.pub-table { display: grid; gap: 12px; }
+.pub-head { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; }
+.pub-row { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; }
+.pub-cell { min-width: 0; }
+.pub-hcell h3 { margin: 0 0 6px 0; }
+
+
 @media (max-width:860px){
   .pub-grid{ grid-template-columns: 1fr !important; }
 }
