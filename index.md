@@ -77,37 +77,48 @@ layout: default
 <div id="projects" class="card section">
   <h2>Projects</h2>
 
+  <p class="muted small">
+    Selected work that highlights what I build and how I evaluate it. See the full list for additional projects and details.
+  </p>
+
   {% assign featured = site.projects | default: empty | sort: "order" %}
 
   {% if featured.size == 0 %}
-    <div class="muted small">
+    <div class="muted small" style="margin-top:10px;">
       No projects found. Ensure the <code>projects</code> collection is enabled in <code>_config.yml</code>.
     </div>
   {% endif %}
 
-  {% for pr in featured limit:3 %}
-    <div class="item">
-      <div class="item-title">
-        <a href="{{ pr.url }}">{{ pr.title }}</a>
-      </div>
-
-      {% if pr.one_liner %}
-        <div class="muted small">{{ pr.one_liner }}</div>
-      {% endif %}
-
-      {% if pr.impact %}
-        <div class="small" style="margin-top:6px;">
-          <span class="muted">Impact:</span> {{ pr.impact }}
+  <div class="project-grid">
+    {% for pr in featured limit:3 %}
+      <div class="project-card">
+        <div class="item-title">
+          <a href="{{ pr.url }}">{{ pr.title }}</a>
         </div>
-      {% endif %}
-    </div>
-  {% endfor %}
+
+        {% if pr.one_liner %}
+          <div class="muted small">{{ pr.one_liner }}</div>
+        {% endif %}
+
+        {% if pr.impact %}
+          <div class="small" style="margin-top:8px;">
+            <span class="muted">Impact:</span> {{ pr.impact }}
+          </div>
+        {% endif %}
+
+        {% if pr.keywords and pr.keywords.size > 0 %}
+          <div class="project-meta small">
+            <span class="muted">Keywords:</span> {{ pr.keywords | join: ", " }}
+          </div>
+        {% endif %}
+      </div>
+    {% endfor %}
+  </div>
 
   <div class="small" style="margin-top:10px;">
     <a href="/projects/">View all projects</a>
   </div>
 </div>
-
 
 <div id="teaching" class="card section">
   <h2>Teaching</h2>
@@ -131,6 +142,3 @@ layout: default
     LinkedIn is the best contact channel: <a href="https://www.linkedin.com/in/peikosgeorgios/" target="_blank" rel="noreferrer">/in/peikosgeorgios</a>
   </p>
 </div>
-
-
-
