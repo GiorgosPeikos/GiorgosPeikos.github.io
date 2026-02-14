@@ -11,16 +11,12 @@ keywords: ["healthcare AI", "conversational AI", "RAG", "health information retr
   <h1>ANTHEM (UniMiB)</h1>
 
   <p class="muted">
-    ANTHEM is the programme under which I have been hired as a Fixed-term Researcher (RTDA) at the University of Milano-Bicocca to build and evaluate trustworthy AI systems for healthcare.
+    ANTHEM (AdvaNced Technologies for Human centEred Medicine) is the programme under which I have been hired as a Fixed-term Researcher (RTDA) at the University of Milano-Bicocca to build and evaluate trustworthy AI systems for healthcare.
   </p>
-
-  <h2>Programme</h2>
   <p class="small">
-    ANTHEM stands for AdvaNced Technologies for Human centEred Medicine.
     Programme website:
     <a href="https://fondazioneanthem.it/en/" target="_blank" rel="noreferrer">fondazioneanthem.it</a>
   </p>
-</div>
 
 <div class="card section">
   <h2>Projects within ANTHEM</h2>
@@ -98,7 +94,7 @@ keywords: ["healthcare AI", "conversational AI", "RAG", "health information retr
     <div class="project-card">
       <div class="item-title">Combining LLMs with knowledge bases for trustworthy health search</div>
       <div class="muted small">
-        Knowledge grounded claim verification used as a correctness signal to support trust aware ranking.
+        Knowledge grounded claim verification used as a correctness signal to support trustworthy ranking.
       </div>
       <div class="project-meta small">
         <span class="muted">Link:</span>
