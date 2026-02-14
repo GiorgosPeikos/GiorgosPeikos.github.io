@@ -170,7 +170,7 @@ h2{ margin:0 0 10px 0; font-size:20px; }
   .project-grid{ grid-template-columns: 1fr; }
 }
 
-/* Publications split layout */
+/* Publications split layout (kept for compatibility if used elsewhere) */
 .pub-grid{
   display: grid !important;
   grid-template-columns: 1fr 1fr !important;
@@ -182,19 +182,58 @@ h2{ margin:0 0 10px 0; font-size:20px; }
   margin: 0 0 10px 0;
 }
 
-.pub-col .item:first-child{
-  border-top: none;
+/* Publications table layout: aligned rows and aligned separators */
+.pub-table{
+  display: grid;
+  gap: 0;
 }
 
-.pub-table { display: grid; gap: 12px; }
-.pub-head { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; }
-.pub-row { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; }
-.pub-cell { min-width: 0; }
-.pub-hcell h3 { margin: 0 0 6px 0; }
+.pub-head{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--divider);
+  margin-bottom: 2px;
+}
 
+.pub-hcell h3{
+  margin: 0;
+}
 
+.pub-row{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+  align-items: start;
+  border-top: 1px solid var(--divider);
+  padding: 12px 0;
+}
+
+.pub-row:first-of-type{
+  border-top: none;
+  padding-top: 12px;
+}
+
+/* Remove per-item dividers inside the publications table (row draws the divider) */
+.pub-table .item{
+  border-top: none;
+  padding: 0;
+}
+
+/* Mobile */
 @media (max-width:860px){
   .pub-grid{ grid-template-columns: 1fr !important; }
+
+  .pub-head{
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .pub-row{
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
 }
 
 @media (max-width:700px){
