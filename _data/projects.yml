@@ -1,9 +1,14 @@
-﻿items:
-  - title: "Project 1"
-    one_liner: "One line description."
-    url: ""
-    code: ""
-  - title: "Project 2"
-    one_liner: "One line description."
-    url: ""
-    code: ""
+﻿- title: "ANTHEM: Conversational AI for Healthcare"
+  url: "/projects/anthem/"
+  order: 1
+  description: "Conversational search and RAG style pipelines for healthcare applications."
+
+- title: "DoSSIER: Professional Search Systems"
+  url: "/projects/dossier/"
+  order: 2
+  description: "Professional search in health and legal domains, development of search systems and evaluation."
+
+- title: "ASPIRE: IR Evaluation Analysis Tool"
+  url: "/projects/aspire/"
+  order: 3
+  description: "Streamlit tool to compare search (ranking) systems and analyze their performance."
