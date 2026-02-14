@@ -1,42 +1,50 @@
-﻿top_cited:
-  - title: "TITLE (Top cited #1)"
-    authors: "Authors"
-    venue: "Venue"
-    year: 202X
-    citations: 0
+top_cited:
+  - title: "Utilizing ChatGPT to Enhance Clinical Trial Enrollment"
+    authors: "Georgios Peikos, Symeon Symeonidis, Pranav Kasela, G. Pasi"
+    venue: "arXiv.org"
+    year: 2023
+    citations: 16
     links:
-      - label: "PDF"
-        url: ""
-      - label: "Code"
-        url: ""
-  - title: "TITLE (Top cited #2)"
-    authors: "Authors"
-    venue: "Venue"
-    year: 202X
-    citations: 0
-    links: []
-  - title: "TITLE (Top cited #3)"
-    authors: "Authors"
-    venue: "Venue"
-    year: 202X
-    citations: 0
-    links: []
+      - label: "Semantic Scholar"
+        url: "https://www.semanticscholar.org/paper/362d4e00506f9bb39d42185a0b128f8602e139a8"
+  - title: "LeiBi@COLIEE 2022: Aggregating Tuned Lexical Models with a Cluster-driven BERT-based Model for Case Law Retrieval"
+    authors: "Arian Askari, Georgios Peikos, G. Pasi, Suzan Verberne"
+    venue: "arXiv.org"
+    year: 2022
+    citations: 12
+    links:
+      - label: "Semantic Scholar"
+        url: "https://www.semanticscholar.org/paper/5e0bf5d58b224c6261cc714139a54681a7917149"
+  - title: "Leveraging Large Language Models for Medical Information Extraction and Query Generation"
+    authors: "Georgios Peikos, Pranav Kasela, Gabriella Pasi"
+    venue: "2024 IEEE/WIC International Conference on Web Intelligence and Intelligent Agent Technology (WI-IAT)"
+    year: 2024
+    citations: 9
+    links:
+      - label: "Semantic Scholar"
+        url: "https://www.semanticscholar.org/paper/0d90ff59895aafe287ebcdafa114319428a44af2"
 
 most_recent:
-  - title: "TITLE (Most recent #1)"
-    authors: "Authors"
-    venue: "Venue"
-    year: 202X
+  - title: "Fact-Driven Health Information Retrieval: Integrating LLMs and Knowledge Graphs to Combat Misinformation"
+    authors: "Gian Carlo Milanese, Georgios Peikos, Gabriella Pasi, Marco Viviani"
+    venue: "European Conference on Information Retrieval"
+    year: 2025
     links:
-      - label: "PDF"
-        url: ""
-  - title: "TITLE (Most recent #2)"
-    authors: "Authors"
-    venue: "Venue"
-    year: 202X
-    links: []
-  - title: "TITLE (Most recent #3)"
-    authors: "Authors"
-    venue: "Venue"
-    year: 202X
-    links: []
+      - label: "Semantic Scholar"
+        url: "https://www.semanticscholar.org/paper/16ce8272585fc1ec046c95bb43e71e52243fdeba"
+  - title: "Mixture of Experts Approaches in Dense Retrieval Tasks"
+    authors: "Effrosyni Sokli, Pranav Kasela, Georgios Peikos, Gabriella Pasi"
+    venue: "arXiv.org"
+    year: 2025
+    links:
+      - label: "Semantic Scholar"
+        url: "https://www.semanticscholar.org/paper/6a02f6a421f13756733a6e8b9619d458b5babc80"
+  - title: "ASPIRE: Assistive System for Performance Evaluation in IR"
+    authors: "Georgios Peikos, Wojciech Kusa, Symeon Symeonidis"
+    venue: "European Conference on Information Retrieval"
+    year: 2025
+    links:
+      - label: "Semantic Scholar"
+        url: "https://www.semanticscholar.org/paper/9572f99eba993f1e768850c4073b2a9d14fae44f"
+
+# updated: 2026-02-14T12:47:49.309726Z
