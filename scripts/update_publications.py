@@ -11,6 +11,7 @@ API_KEY = os.getenv("S2_API_KEY", "").strip()
 
 FIELDS = "papers.title,papers.year,papers.venue,papers.citationCount,papers.url,papers.authors"
 
+
 def http_get(url: str) -> dict:
     req = urllib.request.Request(url)
     req.add_header("User-Agent", "GiorgosPeikos-GitHubPages/1.0")
@@ -18,6 +19,7 @@ def http_get(url: str) -> dict:
         req.add_header("x-api-key", API_KEY)
     with urllib.request.urlopen(req, timeout=30) as resp:
         return json.loads(resp.read().decode("utf-8"))
+
 
 def author_search(query: str) -> str:
     url = f"{API_BASE}/author/search?query={urllib.parse.quote(query)}&limit=5"
@@ -27,6 +29,7 @@ def author_search(query: str) -> str:
         if "peikos" in name:
             return str(a.get("authorId"))
     raise RuntimeError("Could not find an authorId in Semantic Scholar search results.")
+
 
 def dump_yaml(top_cited, most_recent) -> str:
     def esc(s):
@@ -63,6 +66,7 @@ def dump_yaml(top_cited, most_recent) -> str:
     out.append(f'# updated: {datetime.utcnow().isoformat()}Z')
     return "\n".join(out) + "\n"
 
+
 def main():
     global S2_AUTHOR_ID
     if not S2_AUTHOR_ID:
@@ -82,6 +86,7 @@ def main():
         f.write(dump_yaml(top_cited, most_recent))
 
     print("Wrote _data/publications.yml")
+
 
 if __name__ == "__main__":
     try:

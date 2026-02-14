@@ -41,39 +41,6 @@ layout: default
   </ul>
 </div>
 
-<div id="publications" class="card section">
-  <h2>Publications</h2>
-  <p class="muted small">
-    Full list: <a href="https://scholar.google.com/citations?user=-0ObuR0AAAAJ&hl=en" target="_blank" rel="noreferrer">Google Scholar</a>
-  </p>
-
-  <h3 style="margin:12px 0 6px 0;">Top cited</h3>
-  {% for pub in site.data.publications.top_cited %}
-  <div class="item">
-    <div class="item-title">{{ pub.title }}</div>
-    <div class="muted small item-meta">{{ pub.authors }} · {{ pub.venue }} · {{ pub.year }} · Cited by {{ pub.citations }}</div>
-    <div class="small">
-      {% for l in pub.links %}
-        <a href="{{ l.url }}" target="_blank" rel="noreferrer">{{ l.label }}</a>{% unless forloop.last %} · {% endunless %}
-      {% endfor %}
-    </div>
-  </div>
-  {% endfor %}
-
-  <h3 style="margin:14px 0 6px 0;">Most recent</h3>
-  {% for pub in site.data.publications.most_recent %}
-  <div class="item">
-    <div class="item-title">{{ pub.title }}</div>
-    <div class="muted small item-meta">{{ pub.authors }} · {{ pub.venue }} · {{ pub.year }}</div>
-    <div class="small">
-      {% for l in pub.links %}
-        <a href="{{ l.url }}" target="_blank" rel="noreferrer">{{ l.label }}</a>{% unless forloop.last %} · {% endunless %}
-      {% endfor %}
-    </div>
-  </div>
-  {% endfor %}
-</div>
-
 <div id="projects" class="card section">
   <h2>Projects</h2>
 
@@ -117,6 +84,47 @@ layout: default
 
   <div class="small" style="margin-top:10px;">
     <a href="/projects/">View all projects</a>
+  </div>
+</div>
+
+<div id="publications" class="card section">
+  <h2>Publications</h2>
+  <p class="muted small">
+    Full list: <a href="https://scholar.google.com/citations?user=-0ObuR0AAAAJ&hl=en" target="_blank" rel="noreferrer">Google Scholar</a>
+  </p>
+
+  <div class="pub-grid">
+
+    <div class="pub-col">
+      <h3>Most recent</h3>
+      {% for pub in site.data.publications.most_recent %}
+      <div class="item">
+        <div class="item-title">{{ pub.title }}</div>
+        <div class="muted small item-meta">{{ pub.authors }} · {{ pub.venue }} · {{ pub.year }}</div>
+        <div class="small">
+          {% for l in pub.links %}
+            <a href="{{ l.url }}" target="_blank" rel="noreferrer">{{ l.label }}</a>{% unless forloop.last %} · {% endunless %}
+          {% endfor %}
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+
+    <div class="pub-col">
+      <h3>Most influential</h3>
+      {% for pub in site.data.publications.top_cited %}
+      <div class="item">
+        <div class="item-title">{{ pub.title }}</div>
+        <div class="muted small item-meta">{{ pub.authors }} · {{ pub.venue }} · {{ pub.year }} · Cited by {{ pub.citations }}</div>
+        <div class="small">
+          {% for l in pub.links %}
+            <a href="{{ l.url }}" target="_blank" rel="noreferrer">{{ l.label }}</a>{% unless forloop.last %} · {% endunless %}
+          {% endfor %}
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+
   </div>
 </div>
 

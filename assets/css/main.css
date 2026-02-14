@@ -170,6 +170,26 @@ h2{ margin:0 0 10px 0; font-size:20px; }
   .project-grid{ grid-template-columns: 1fr; }
 }
 
+/* Publications split layout */
+.pub-grid{
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 12px;
+}
+
+.pub-col h3{
+  margin: 0 0 10px 0;
+}
+
+.pub-col .item:first-child{
+  border-top: none;
+}
+
+@media (max-width:860px){
+  .pub-grid{ grid-template-columns: 1fr; }
+}
+
 @media (max-width:700px){
   .hero{ grid-template-columns:1fr; }
   .avatar{ width:104px; height:104px; }

@@ -12,8 +12,6 @@ keywords: ["healthcare AI", "conversational AI", "RAG", "health information retr
 
   <p class="muted">
     ANTHEM (AdvaNced Technologies for Human centEred Medicine) is the programme under which I have been hired as a Fixed-term Researcher (RTDA) at the University of Milano-Bicocca to build and evaluate trustworthy AI systems for healthcare.
-  </p>
-  <p class="small">
     Programme website:
     <a href="https://fondazioneanthem.it/en/" target="_blank" rel="noreferrer">fondazioneanthem.it</a>
   </p>
