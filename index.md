@@ -7,7 +7,7 @@ layout: default
     <img src="/assets/img/profile.png" alt="Profile photo" onerror="this.style.display='none'; this.parentElement.innerHTML='<div style=&quot;padding:14px&quot; class=&quot;muted small&quot;>Add assets/img/profile.png</div>';">
   </div>
   <div>
-    <h1>Giorgos Peikos</h1>
+    <h1>Georgios Peikos</h1>
     <div class="muted">
       Search and NLP Researcher (RTDA), University of Milano Bicocca · ex Marie Curie ESR (DoSSIER)
     </div>
