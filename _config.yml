@@ -3,3 +3,5 @@ description: "NLP • LLMs • RAG • Information Retrieval"
 url: "https://GiorgosPeikos.github.io"
 markdown: kramdown
 permalink: pretty
+plugins:
+  - jekyll-sitemap
