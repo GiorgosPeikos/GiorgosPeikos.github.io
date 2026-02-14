@@ -172,10 +172,10 @@ h2{ margin:0 0 10px 0; font-size:20px; }
 
 /* Publications split layout */
 .pub-grid{
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 14px;
-  margin-top: 12px;
+  display: grid !important;
+  grid-template-columns: 1fr 1fr !important;
+  gap: 14px !important;
+  align-items: start;
 }
 
 .pub-col h3{
@@ -187,7 +187,7 @@ h2{ margin:0 0 10px 0; font-size:20px; }
 }
 
 @media (max-width:860px){
-  .pub-grid{ grid-template-columns: 1fr; }
+  .pub-grid{ grid-template-columns: 1fr !important; }
 }
 
 @media (max-width:700px){
