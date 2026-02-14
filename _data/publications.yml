@@ -32,13 +32,6 @@ most_recent:
     links:
       - label: "Semantic Scholar"
         url: "https://www.semanticscholar.org/paper/16ce8272585fc1ec046c95bb43e71e52243fdeba"
-  - title: "Mixture of Experts Approaches in Dense Retrieval Tasks"
-    authors: "Effrosyni Sokli, Pranav Kasela, Georgios Peikos, Gabriella Pasi"
-    venue: "arXiv.org"
-    year: 2025
-    links:
-      - label: "Semantic Scholar"
-        url: "https://www.semanticscholar.org/paper/6a02f6a421f13756733a6e8b9619d458b5babc80"
   - title: "ASPIRE: Assistive System for Performance Evaluation in IR"
     authors: "Georgios Peikos, Wojciech Kusa, Symeon Symeonidis"
     venue: "European Conference on Information Retrieval"
@@ -46,5 +39,12 @@ most_recent:
     links:
       - label: "Semantic Scholar"
         url: "https://www.semanticscholar.org/paper/9572f99eba993f1e768850c4073b2a9d14fae44f"
+  - title: "A Decision-Theoretic Framework to Multidimensional Relevance Estimation"
+    authors: "Georgios Peikos, Gabriella Pasi"
+    venue: "International Journal of Information Technology &amp; Decision Making"
+    year: 2025
+    links:
+      - label: "Semantic Scholar"
+        url: "https://www.semanticscholar.org/paper/a1c5a98aac5bec1e6e916cf69ceca72a3579d49f"
 
-# updated: 2026-02-14T12:47:49.309726Z
+# updated: 2026-02-14T13:36:12.842911Z
