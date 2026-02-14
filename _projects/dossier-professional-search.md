@@ -24,8 +24,8 @@ keywords: ["information retrieval", "professional search", "ranking", "user inte
 
   <h2>Artifacts</h2>
   <ul class="small">
-    <li><span class="muted">Publications:</span> add links to papers</li>
-    <li><span class="muted">Code:</span> add repository link</li>
-    <li><span class="muted">Slides:</span> add talk or tutorial link</li>
+    <li><span class="muted">Publications:</span>TBA</li>
+    <li><span class="muted">Code:</span>TBA</li>
+    <li><span class="muted">Slides:</span> TBA</li>
   </ul>
 </div>

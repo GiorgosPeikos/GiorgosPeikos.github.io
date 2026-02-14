@@ -17,14 +17,14 @@ keywords: ["information retrieval", "evaluation", "Streamlit", "analysis", "rank
 
   <h2>My contributions</h2>
   <ul class="small">
-    <li>Designed an analysis workflow for comparing runs, inspecting failures, and understanding trade offs.</li>
-    <li>Implemented interactive visualizations to support researcher and practitioner decision making.</li>
+    <li>Designed an analysis workflow for comparing runs, inspecting failures, and understanding trade-offs.</li>
+    <li>Implemented interactive visualizations to support researcher and practitioner decision-making.</li>
     <li>Packaged the work as a usable prototype for repeated evaluation cycles.</li>
   </ul>
 
   <h2>Artifacts</h2>
   <ul class="small">
-    <li><span class="muted">Code:</span> add repository link</li>
-    <li><span class="muted">Demo:</span> add demo link</li>
+    <li><span class="muted">Code:</span>TBA</li>
+    <li><span class="muted">Demo:</span>TBA</li>
   </ul>
 </div>
