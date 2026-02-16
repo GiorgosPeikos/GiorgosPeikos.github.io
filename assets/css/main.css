@@ -430,3 +430,40 @@ h2{
   background: var(--pill-context-hobby-bg) !important;
   border-color: var(--pill-context-hobby-br) !important;
 }
+
+/* Publications: show per-cell label only on mobile */
+.pub-label{
+  display: none;
+  font-weight: 650;
+  margin: 0 0 6px 0;
+}
+
+/* Mobile publications layout: stack into one column */
+@media (max-width: 860px){
+  .pub-label{ display: block; }
+
+  .pub-head{ display: none; } /* hide the two-column header */
+
+  .pub-row{
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .pub-cell{
+    border-top: 1px solid var(--divider);
+    padding-top: 12px;
+  }
+
+  .pub-cell:first-child{
+    border-top: none;
+    padding-top: 0;
+  }
+}
+
+/* Publications: title colour consistent with project links */
+#publications .item-title{
+  color: var(--accent);
+}
+
+.pub-head{ border-bottom: none; }
+
