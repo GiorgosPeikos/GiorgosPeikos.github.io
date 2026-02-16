@@ -48,7 +48,7 @@ keywords: ["healthcare AI", "conversational AI", "RAG", "health information retr
     </div>
 
     <div class="project-card">
-      <div class="item-title">Factual medical QA (RAG assistant)</div>
+      <div class="item-title">Factual medical QA (RAG System)</div>
       <div class="muted small">
         Internal prototype conversational assistant for factual medical question answering, grounded in general knowledge plus an internal document collection, with citation first responses and reliability checks.
       </div>

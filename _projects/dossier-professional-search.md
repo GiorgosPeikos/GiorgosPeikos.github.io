@@ -33,7 +33,8 @@ keywords: ["information retrieval", "professional search", "medical IR", "legal 
         Prototype that matches patients to clinical trials using a custom information retrieval pipeline informed by multidimensional relevance estimation and user centred design choices.
       </div>
       <div class="small" style="margin-top:8px;">
-        <span class="muted">Impact:</span> Demonstrates an applied patient to trial matching workflow using research driven ranking logic and user aspect considerations.
+        <span class="muted">Impact:</span> Demonstrates an applied patient to trial matching workflow using findings from my PhD research in multidimensional ranking systems and user-aspect 
+considerations.
       </div>
       <div class="project-meta small">
         <span class="muted">Status:</span> Public code
