@@ -9,8 +9,8 @@ permalink: /projects/
   <h1>Projects</h1>
 
   <p class="muted">
-    A curated set of projects that demonstrate what I build, how I evaluate it, and how it is used.
-    Each page includes the problem context, my contributions, and links to supporting artifacts when available.
+    A curated set of projects that showcase what I build and is publicly available, how I evaluate it, and how it is used.
+    Each page includes the problem context, my contributions, and links to supporting artifacts when publicly available.
   </p>
 
   <div class="small" style="margin-top:14px;">
@@ -26,10 +26,19 @@ permalink: /projects/
       <div class="item">
         <div class="item-title">
           <a href="{{ pr.url }}">{{ pr.title }}</a>
+          {% if pr.is_hobby %}
+            <span class="pill" style="margin-left:8px;">Hobby</span>
+          {% endif %}
         </div>
 
         {% if pr.one_liner %}
           <div class="muted small">{{ pr.one_liner }}</div>
+        {% endif %}
+
+        {% if pr.impact %}
+          <div class="small" style="margin-top:6px;">
+            <span class="muted">Impact:</span> {{ pr.impact }}
+          </div>
         {% endif %}
 
         {% if pr.keywords and pr.keywords.size > 0 %}
