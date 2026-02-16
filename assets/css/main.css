@@ -9,11 +9,58 @@
 
   --border: rgba(15, 23, 42, 0.12);
   --shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+  --divider: rgba(15, 23, 42, 0.10);
 
+  /* Background highlights (match accent, but easy to adjust later) */
+  --bgGlow1: rgba(37, 99, 235, 0.10);
+  --bgGlow2: rgba(29, 78, 216, 0.08);
+
+  /* Default pill styling (fallback) */
   --pillBg: rgba(29, 78, 216, 0.06);
   --pillBorder: rgba(29, 78, 216, 0.22);
 
-  --divider: rgba(15, 23, 42, 0.10);
+  /* Pill palettes by category (Type) */
+  --pill-type-programme-bg: rgba(29, 78, 216, 0.08);
+  --pill-type-programme-br: rgba(29, 78, 216, 0.30);
+
+  --pill-type-project-bg: rgba(15, 118, 110, 0.08);
+  --pill-type-project-br: rgba(15, 118, 110, 0.30);
+
+  --pill-type-tool-bg: rgba(109, 40, 217, 0.08);
+  --pill-type-tool-br: rgba(109, 40, 217, 0.28);
+
+  --pill-type-case_study-bg: rgba(217, 119, 6, 0.10);
+  --pill-type-case_study-br: rgba(217, 119, 6, 0.32);
+
+  /* Pill palettes by category (Status) */
+  --pill-status-active-bg: rgba(22, 163, 74, 0.08);
+  --pill-status-active-br: rgba(22, 163, 74, 0.30);
+
+  --pill-status-completed-bg: rgba(100, 116, 139, 0.10);
+  --pill-status-completed-br: rgba(100, 116, 139, 0.28);
+
+  --pill-status-maintenance-bg: rgba(79, 70, 229, 0.08);
+  --pill-status-maintenance-br: rgba(79, 70, 229, 0.28);
+
+  --pill-status-archived-bg: rgba(220, 38, 38, 0.08);
+  --pill-status-archived-br: rgba(220, 38, 38, 0.28);
+
+  /* Pill palettes by category (Context) */
+  --pill-context-research-bg: rgba(15, 23, 42, 0.06);
+  --pill-context-research-br: rgba(15, 23, 42, 0.18);
+
+  --pill-context-teaching-bg: rgba(8, 145, 178, 0.08);
+  --pill-context-teaching-br: rgba(8, 145, 178, 0.28);
+
+  --pill-context-applied-bg: rgba(75, 85, 99, 0.08);
+  --pill-context-applied-br: rgba(75, 85, 99, 0.22);
+
+  --pill-context-hobby-bg: rgba(217, 119, 6, 0.08);
+  --pill-context-hobby-br: rgba(217, 119, 6, 0.26);
+
+  /* Shared radii */
+  --r-card: 16px;
+  --r-inner: 14px;
 }
 
 /* Base */
@@ -25,8 +72,8 @@ body{
   font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
   color: var(--text);
   background:
-    radial-gradient(1200px 700px at 10% 0%, rgba(37, 99, 235, 0.10), transparent 55%),
-    radial-gradient(900px 600px at 85% 10%, rgba(29, 78, 216, 0.08), transparent 55%),
+    radial-gradient(1200px 700px at 10% 0%, var(--bgGlow1), transparent 55%),
+    radial-gradient(900px 600px at 85% 10%, var(--bgGlow2), transparent 55%),
     var(--bg);
   line-height: 1.6;
 }
@@ -91,7 +138,7 @@ a:hover{
   padding: 18px 20px;
   background: var(--card);
   border: 1px solid var(--border);
-  border-radius: 16px;
+  border-radius: var(--r-card);
   box-shadow: var(--shadow);
 }
 .section{ margin-top: 18px; }
@@ -107,7 +154,7 @@ a:hover{
 .avatar{
   width: 120px;
   height: 120px;
-  border-radius: 16px;
+  border-radius: var(--r-card);
   overflow: hidden;
   border: 1px solid var(--border);
   background: linear-gradient(135deg, rgba(29, 78, 216, 0.10), rgba(255, 255, 255, 0.0));
@@ -156,12 +203,68 @@ h2{
   background: var(--pillBg);
   font-size: 13px;
   color: var(--text);
+  line-height: 1;
+  white-space: nowrap;
 }
 
 .pill:hover{
-  border-color: rgba(29, 78, 216, 0.45);
-  background: rgba(29, 78, 216, 0.10);
+  background: rgba(15, 23, 42, 0.06);
+  border-color: rgba(15, 23, 42, 0.18);
   text-decoration: none;
+}
+
+/* Category specific pills (Type) */
+.pill.pill-type-programme{
+  background: var(--pill-type-programme-bg);
+  border-color: var(--pill-type-programme-br);
+}
+.pill.pill-type-project{
+  background: var(--pill-type-project-bg);
+  border-color: var(--pill-type-project-br);
+}
+.pill.pill-type-tool{
+  background: var(--pill-type-tool-bg);
+  border-color: var(--pill-type-tool-br);
+}
+.pill.pill-type-case_study{
+  background: var(--pill-type-case_study-bg);
+  border-color: var(--pill-type-case_study-br);
+}
+
+/* Category specific pills (Status) */
+.pill.pill-status-active{
+  background: var(--pill-status-active-bg);
+  border-color: var(--pill-status-active-br);
+}
+.pill.pill-status-completed{
+  background: var(--pill-status-completed-bg);
+  border-color: var(--pill-status-completed-br);
+}
+.pill.pill-status-maintenance{
+  background: var(--pill-status-maintenance-bg);
+  border-color: var(--pill-status-maintenance-br);
+}
+.pill.pill-status-archived{
+  background: var(--pill-status-archived-bg);
+  border-color: var(--pill-status-archived-br);
+}
+
+/* Category specific pills (Context) */
+.pill.pill-context-research{
+  background: var(--pill-context-research-bg);
+  border-color: var(--pill-context-research-br);
+}
+.pill.pill-context-teaching{
+  background: var(--pill-context-teaching-bg);
+  border-color: var(--pill-context-teaching-br);
+}
+.pill.pill-context-applied{
+  background: var(--pill-context-applied-bg);
+  border-color: var(--pill-context-applied-br);
+}
+.pill.pill-context-hobby{
+  background: var(--pill-context-hobby-bg);
+  border-color: var(--pill-context-hobby-br);
 }
 
 /* List items */
@@ -184,7 +287,7 @@ h2{
 
 .project-card{
   border: 1px solid var(--border);
-  border-radius: 14px;
+  border-radius: var(--r-inner);
   padding: 14px;
   background: var(--card);
 }
@@ -242,7 +345,7 @@ h2{
   padding-top: 12px;
 }
 
-/* Remove per-item dividers inside the publications table */
+/* Remove per item dividers inside the publications table */
 .pub-table .item{
   border-top: none;
   padding: 0;
@@ -274,4 +377,56 @@ h2{
     flex-direction: column;
     align-items: flex-start;
   }
+}
+
+/* Force category pill styles to win (prevents overrides) */
+.pill.pill-type-programme{
+  background: var(--pill-type-programme-bg) !important;
+  border-color: var(--pill-type-programme-br) !important;
+}
+.pill.pill-type-project{
+  background: var(--pill-type-project-bg) !important;
+  border-color: var(--pill-type-project-br) !important;
+}
+.pill.pill-type-tool{
+  background: var(--pill-type-tool-bg) !important;
+  border-color: var(--pill-type-tool-br) !important;
+}
+.pill.pill-type-case_study{
+  background: var(--pill-type-case_study-bg) !important;
+  border-color: var(--pill-type-case_study-br) !important;
+}
+
+.pill.pill-status-active{
+  background: var(--pill-status-active-bg) !important;
+  border-color: var(--pill-status-active-br) !important;
+}
+.pill.pill-status-completed{
+  background: var(--pill-status-completed-bg) !important;
+  border-color: var(--pill-status-completed-br) !important;
+}
+.pill.pill-status-maintenance{
+  background: var(--pill-status-maintenance-bg) !important;
+  border-color: var(--pill-status-maintenance-br) !important;
+}
+.pill.pill-status-archived{
+  background: var(--pill-status-archived-bg) !important;
+  border-color: var(--pill-status-archived-br) !important;
+}
+
+.pill.pill-context-research{
+  background: var(--pill-context-research-bg) !important;
+  border-color: var(--pill-context-research-br) !important;
+}
+.pill.pill-context-teaching{
+  background: var(--pill-context-teaching-bg) !important;
+  border-color: var(--pill-context-teaching-br) !important;
+}
+.pill.pill-context-applied{
+  background: var(--pill-context-applied-bg) !important;
+  border-color: var(--pill-context-applied-br) !important;
+}
+.pill.pill-context-hobby{
+  background: var(--pill-context-hobby-bg) !important;
+  border-color: var(--pill-context-hobby-br) !important;
 }

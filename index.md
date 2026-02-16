@@ -42,7 +42,7 @@ layout: default
 </div>
 
 <div id="projects" class="card section">
-  <h2>Projects</h2>
+  <h2>Programmes & Projects</h2>
 
   <p class="muted small">
     Selected work that highlights what I build and how I evaluate it. See the full list for additional projects and details.
@@ -63,8 +63,24 @@ layout: default
           <a href="{{ pr.url }}">{{ pr.title }}</a>
         </div>
 
+        <div class="small" style="margin-top:6px;">
+          {% if pr.type %}
+            <span class="pill pill-type-{{ pr.type }}">{{ pr.type | replace: "_", " " | capitalize }}</span>
+          {% endif %}
+
+          {% if pr.status %}
+            <span class="pill pill-status-{{ pr.status }}">{{ pr.status | replace: "_", " " | capitalize }}</span>
+          {% endif %}
+
+          {% if pr.context and pr.context.size > 0 %}
+            {% for c in pr.context %}
+              <span class="pill pill-context-{{ c }}">{{ c | replace: "_", " " | capitalize }}</span>
+            {% endfor %}
+          {% endif %}
+        </div>
+
         {% if pr.one_liner %}
-          <div class="muted small">{{ pr.one_liner }}</div>
+          <div class="muted small" style="margin-top:8px;">{{ pr.one_liner }}</div>
         {% endif %}
 
         {% if pr.impact %}
@@ -150,7 +166,6 @@ layout: default
     {% endfor %}
   </div>
 </div>
-
 
 <div id="teaching" class="card section">
   <h2>Teaching</h2>

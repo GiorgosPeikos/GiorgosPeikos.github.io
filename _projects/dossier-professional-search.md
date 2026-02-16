@@ -3,8 +3,11 @@ layout: default
 title: "DoSSIER: Professional Search (Marie Curie PhD)"
 one_liner: "Marie Curie PhD research on professional search in health and legal domains, focusing on interaction aware and multidimensional relevance."
 order: 2
+type: programme
+status: completed
+context: ["research"]
 impact: "Delivered PhD outputs and applied prototypes for professional search, including clinical trial matching and retrieval methods for medical and legal tasks."
-keywords: ["information retrieval", "professional search", "medical IR", "legal IR", "multidimensional relevance", "query representation", "reranking", "aggregation", "evaluation"]
+keywords: ["information retrieval", "professional search", "medical IR", "legal IR", "multidimensional relevance", "query representation", "evaluation"]
 ---
 
 <div class="card section">

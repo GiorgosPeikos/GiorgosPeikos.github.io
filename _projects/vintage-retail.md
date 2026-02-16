@@ -4,6 +4,9 @@ title: "Vintage Retail Lab"
 one_liner: "A hobby retail venture used as a real world testbed for customer experience, marketing experiments, and practical AI tools."
 order: 4
 is_hobby: true
+type: hobby
+status: active
+context: ["case study"]
 impact: "Built a hobby scale retail workflow that creates fast feedback loops on customer behaviour, messaging, and lightweight automation."
 keywords: ["applied AI", "customer experience", "marketing", "pricing", "unit economics", "automation", "experimentation", "eBay"]
 ---

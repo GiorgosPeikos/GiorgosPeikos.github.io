@@ -3,6 +3,9 @@ layout: default
 title: "ASPIRE: Search Evaluation and Analysis"
 one_liner: "A visual analytics tool for evaluating and comparing search systems beyond average metrics, developed at UniMiB."
 order: 3
+type: tool
+status: maintenance
+context: ["research", "teaching"]
 impact: "Delivered a published, open-source visual analytics tool used in IR teaching and applicable as a proof-of-concept for business search evaluation and debugging."
 keywords: ["search evaluation", "information retrieval", "ranking", "visual analytics", "IR experimentation", "diagnostics", "Streamlit", "statistical testing"]
 ---
