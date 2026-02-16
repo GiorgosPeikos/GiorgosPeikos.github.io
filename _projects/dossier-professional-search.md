@@ -56,7 +56,7 @@ considerations.
 </div>
 
 <div class="card section">
-  <h2>Research outputs</h2>
+  <h2>Artifacts, Systems & Publications</h2>
 
   <div class="project-grid" style="margin-top:10px;">
 

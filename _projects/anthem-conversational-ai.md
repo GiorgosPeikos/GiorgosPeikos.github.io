@@ -18,6 +18,7 @@ keywords: ["healthcare AI", "conversational AI", "RAG", "health information retr
     For more information about ANTHEM, please visit:
     <a href="https://fondazioneanthem.it/en/" target="_blank" rel="noreferrer">fondazioneanthem.it</a>
   </p>
+</div>
 
 <div class="card section">
   <h2>Sub-projects within ANTHEM</h2>
@@ -77,8 +78,11 @@ keywords: ["healthcare AI", "conversational AI", "RAG", "health information retr
     </div>
 
   </div>
+</div>
 
-  <h2 style="margin-top:18px;">Publications</h2>
+<div class="card section" id="artifacts">
+  <h2>Artifacts, Systems & Publications</h2>
+
   <div class="project-grid" style="margin-top:10px;">
 
     <div class="project-card">
