@@ -17,7 +17,7 @@ keywords: ["healthcare AI", "conversational AI", "RAG", "health information retr
   </p>
 
 <div class="card section">
-  <h2>Projects within ANTHEM</h2>
+  <h2>Sub-projects within ANTHEM</h2>
 
   <div class="project-grid">
 
