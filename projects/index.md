@@ -6,7 +6,7 @@ permalink: /projects/
 ---
 
 <div class="card section">
-  <h1>Projects</h1>
+  <h1>Selected Projects</h1>
 
   <p class="muted">
     A curated set of projects that show what I build, how I evaluate it, and how it is used.
