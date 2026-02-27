@@ -40,40 +40,69 @@ layout: default
 <div id="about" class="card section">
   <h2>About</h2>
 
-  <p>
-    I am a Search and NLP Researcher at the University of Milano-Bicocca, mainly working on <span class="accent-strong">trustworthy AI</span> systems for <span 
-class="accent-strong">healthcare</span> within the ANTHEM programme.
-  </p>
+  <div class="small">
+    <p>
+      I am a Search and NLP Researcher at the University of Milano-Bicocca, mainly working on
+      <span class="accent-strong">trustworthy AI</span> systems for
+      <span class="accent-strong">healthcare</span> within the ANTHEM programme.
+    </p>
 
-  <p>
-    My core expertise is <span class="accent-strong">Information Retrieval</span> and <span class="accent-strong">NLP</span>, with a focus on <span class="accent-strong">LLM-based systems</span> 
-and <span class="accent-strong">Retrieval Augmented Generation</span>.
-  </p>
+    <p>
+      My core expertise is <span class="accent-strong">Information Retrieval</span> and
+      <span class="accent-strong">NLP</span>, with a focus on
+      <span class="accent-strong">LLM-based systems</span> and
+      <span class="accent-strong">Retrieval Augmented Generation</span>.
+    </p>
 
-  <p>
-    I <span class="accent-strong">build</span> end-to-end pipelines that combine <span class="accent-strong">retrieval</span>, <span class="accent-strong">ranking</span>, and <span class="accent-strong">generation</span> for <span class="accent-strong">domain-specific search</span>.
-    System design is guided by user tasks and real-world constraints such as <span class="accent-strong">evidence grounding</span>, <span class="accent-strong">privacy</span>, and <span class="accent-strong">efficiency</span>.
-  </p>
+    <p>
+      I <span class="accent-strong">build</span> end-to-end pipelines that combine
+      <span class="accent-strong">retrieval</span>, <span class="accent-strong">ranking</span>, and
+      <span class="accent-strong">generation</span> for <span class="accent-strong">domain-specific search</span>.
+      System design is guided by user tasks and real-world constraints such as
+      <span class="accent-strong">evidence grounding</span>, <span class="accent-strong">privacy</span>, and
+      <span class="accent-strong">efficiency</span>.
+    </p>
 
-  <p>
-    I also <span class="accent-strong">teach</span> <span class="accent-strong">Information Retrieval</span> and <span class="accent-strong">Recommender Systems</span> at Bachelor’s and Master’s 
-level,
-with an emphasis on evaluation and practical system building.
-  </p>
+    <p>
+      I also <span class="accent-strong">teach</span> <span class="accent-strong">Information Retrieval</span> and
+      <span class="accent-strong">Recommender Systems</span> at Bachelor’s and Master’s level, with an emphasis on
+      evaluation and practical system building.
+    </p>
 
-  <p>
-   I am open to collaborations that combine applied research and development of search and LLM-based systems, particularly in professional domains such as healthcare, enterprise, and legal.
-   I am also open to projects that match the technical directions and practical focus reflected in my projects. </p>
+    <p>
+      I am open to collaborations that combine applied research and development of search and LLM-based systems,
+      particularly in professional domains such as healthcare, enterprise, and legal. I am also open to projects that
+      match the technical directions and practical focus reflected in my projects.
+    </p>
+  </div>
 </div>
 
 <div id="focus" class="card section">
   <h2>Focus</h2>
-  <ul class="small">
-    <li><span class="accent-strong">RAG pipelines</span>: retrieval, reranking, query understanding, and context construction</li>
-    <li><span class="accent-strong">Large Language Models</span>: training, fine-tuning, context understanding, and generation</li>
-    <li><span class="accent-strong">(LLM/IR) System Evaluation</span> and system diagnostics: offline metrics, error analysis, and user-oriented evaluation</li>
-    <li><span class="accent-strong">Trustworthy AI</span> constraints: evidence-grounded outputs, privacy, efficiency, and expert oversight</li>
-  </ul>
+
+  <div class="item">
+    <div class="small">
+      <span class="accent-strong">RAG pipelines</span>: retrieval, reranking, query understanding, and context construction
+    </div>
+  </div>
+
+  <div class="item">
+    <div class="small">
+      <span class="accent-strong">Large Language Models</span>: training, fine-tuning, context understanding, and generation
+    </div>
+  </div>
+
+  <div class="item">
+    <div class="small">
+      <span class="accent-strong">(LLM/IR) System Evaluation</span> and system diagnostics: offline metrics, error analysis, and user-oriented evaluation
+    </div>
+  </div>
+
+  <div class="item">
+    <div class="small">
+      <span class="accent-strong">Trustworthy AI</span> constraints: evidence grounding, privacy, efficiency, and expert oversight
+    </div>
+  </div>
 </div>
 
 <div id="projects" class="card section">
