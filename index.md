@@ -70,9 +70,9 @@ layout: default
     </p>
 
     <p>
-      I am open to collaborations that combine applied research and development of search and LLM-based systems,
-      particularly in professional domains such as healthcare, enterprise, and legal. I am also open to projects that
-      match the technical directions and practical focus reflected in my projects.
+      I am open to collaborations that combine applied research and development of search and LLM-based systems, particularly in
+      <span class="accent-strong">healthcare</span>, <span class="accent-strong">enterprise</span>, and <span class="accent-strong">legal</span> fields.
+      I am also open to projects aligned with the technical directions and practical focus reflected in my work.
     </p>
   </div>
 </div>
