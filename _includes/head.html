@@ -10,8 +10,8 @@
 
 <link rel="canonical" href="{{ site.url }}{{ page.url | replace:'index.html','' }}" />
 <link rel="icon" href="{{ '/assets/favicon/favicon.ico' | relative_url }}">
-<link rel="icon" type="image/png" sizes="32x32" href="{{ '/assets/favicon/favicon-32x32.png' | relative_url }}">
-<link rel="icon" type="image/png" sizes="16x16" href="{{ '/assets/favicon/favicon-16x16.png' | relative_url }}">
+<link rel="icon" type="image/svg+xml" href="{{ '/assets/favicon/favicon.svg' | relative_url }}">
+<link rel="icon" type="image/png" sizes="96x96" href="{{ '/assets/favicon/favicon-96x96.png' | relative_url }}">
 <link rel="apple-touch-icon" sizes="180x180" href="{{ '/assets/favicon/apple-touch-icon.png' | relative_url }}">
 <link rel="manifest" href="{{ '/assets/favicon/site.webmanifest' | relative_url }}">
 
@@ -22,13 +22,14 @@
 <meta property="og:title" content="{% if page.title %}{{ page.title }} · {{ site.title }}{% else %}{{ site.title }}{% endif %}" />
 <meta property="og:description" content="{{ meta_description }}" />
 <meta property="og:url" content="{{ site.url }}{{ page.url | replace:'index.html','' }}" />
-<meta property="og:image" content="{{ site.url }}/assets/img/og-card.png" />
+<meta property="og:image" content="{{ site.url }}/assets/img/profile_large.png" />
 
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="{% if page.title %}{{ page.title }} · {{ site.title }}{% else %}{{ site.title }}{% endif %}" />
 <meta name="twitter:description" content="{{ meta_description }}" />
-<meta name="twitter:image" content="{{ site.url }}/assets/img/og-card.png" />
+<meta name="twitter:image" content="{{ site.url }}/assets/img/profile_large.png" />
 
+{% assign same_as = site.data.social.links | where_exp: "item", "item.label != 'Email'" %}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -36,10 +37,23 @@
   "name": "{{ site.title }}",
   "url": "{{ site.url }}",
   "description": "{{ site.description }}",
-  "knowsAbout": ["RAG", "Conversational Search", "Information Retrieval", "NLP", "LLMs", "Semantic Search"],
-  "sameAs": [
-    {% for s in site.data.social %}"{{ s.url }}"{% unless forloop.last %},{% endunless %}{% endfor %}
-  ]
+  "jobTitle": "Applied AI Engineer and Search/NLP Researcher",
+  "affiliation": {
+    "@type": "CollegeOrUniversity",
+    "name": "University of Milano-Bicocca"
+  },
+  "knowsAbout": [
+    "Applied AI",
+    "Large Language Models",
+    "Retrieval Augmented Generation",
+    "Information Retrieval",
+    "Natural Language Processing",
+    "Semantic Search",
+    "Conversational Search",
+    "Trustworthy AI",
+    "Healthcare AI"
+  ],
+  "sameAs": {{ same_as | map: "url" | jsonify }}
 }
 </script>
 
