@@ -290,6 +290,10 @@ Scholar</a>.
 <div id="contact" class="card section">
   <h2>Contact</h2>
   <p class="small">
-    LinkedIn is the best contact channel: <a href="https://www.linkedin.com/in/peikosgeorgios/" target="_blank" rel="noreferrer">/in/peikosgeorgios</a>
+    If you would like to discuss collaborations, research, or applied AI projects, you can reach me on LinkedIn:
+    <a href="https://www.linkedin.com/in/peikosgeorgios/" target="_blank" rel="noreferrer">/in/peikosgeorgios</a>
+  </p>
+  <p class="small">
+    <span class="accent-strong">Final Note</span> I would like to thank all the people who have accompanied me during the activities presented above and, over the years, have shaped how I think and work.
   </p>
 </div>
