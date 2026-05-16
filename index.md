@@ -255,13 +255,28 @@ Scholar</a>.
 
 <div id="teaching" class="card section">
   <h2>Teaching</h2>
-  {% for t in site.data.teaching.items %}
-  <div class="item">
-    <div class="item-title">{{ t.title }}</div>
-    <div class="muted small">{{ t.org }} · {{ t.year }}</div>
-    {% if t.notes %}<div class="small">{{ t.notes }}</div>{% endif %}
+  <p class="small">
+    I teach <span class="accent-strong">Information Retrieval</span> and
+    <span class="accent-strong">Recommender Systems</span> at the University of Milano-Bicocca,
+    with a focus on evaluation, retrieval models, modern search systems, and practical system building.
+  </p>
+
+  <div class="small" style="margin-top:10px;">
+    <a href="/teaching/">View teaching materials</a>
   </div>
-  {% endfor %}
+</div>
+
+<div id="tutorials" class="card section">
+  <h2>External Tutorials & Workshops</h2>
+  <p class="small">
+    I also deliver external tutorials and workshops on
+    <span class="accent-strong">NLP</span>, <span class="accent-strong">Information Retrieval</span>,
+    and applied AI topics for research schools and professional audiences.
+  </p>
+
+  <div class="small" style="margin-top:10px;">
+    <a href="/tutorials/">View tutorial and workshop materials</a>
+  </div>
 </div>
 
 [//]: # (<div id="cv" class="card section">)
