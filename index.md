@@ -42,25 +42,32 @@ layout: default
 
   <div class="small">
     <p>
-      I am a Search and NLP Researcher at the University of Milano-Bicocca, mainly working on
-      <span class="accent-strong">trustworthy AI</span> systems for
-      <span class="accent-strong">healthcare</span> within the ANTHEM programme.
+      I am an <span class="accent-strong">Applied AI Engineer</span> and
+      <span class="accent-strong">Search/NLP Researcher</span> at the University of Milano-Bicocca,
+      with a background in <span class="accent-strong">Electrical and Computer Engineering</span>.
+      My work focuses on <span class="accent-strong">Large Language Models</span>,
+      <span class="accent-strong">Retrieval Augmented Generation</span>, and
+      <span class="accent-strong">Information Retrieval</span>, especially for
+      <span class="accent-strong">healthcare</span> and other high-reliability domains.
     </p>
 
     <p>
-      My core expertise is <span class="accent-strong">Information Retrieval</span> and
-      <span class="accent-strong">NLP</span>, with a focus on
-      <span class="accent-strong">LLM-based systems</span> and
-      <span class="accent-strong">Retrieval Augmented Generation</span>.
+      I design and deploy <span class="accent-strong">end-to-end AI systems</span> that combine
+      <span class="accent-strong">data pipelines</span>, <span class="accent-strong">semantic retrieval</span>,
+      <span class="accent-strong">reranking</span>, <span class="accent-strong">model training</span>,
+      <span class="accent-strong">inference</span>, and <span class="accent-strong">evaluation</span>.
+      My recent work includes evidence-grounded RAG systems, conversational search, clinical trial retrieval,
+      and trustworthy AI workflows.
     </p>
 
     <p>
-      I <span class="accent-strong">build</span> end-to-end pipelines that combine
-      <span class="accent-strong">retrieval</span>, <span class="accent-strong">ranking</span>, and
-      <span class="accent-strong">generation</span> for <span class="accent-strong">domain-specific search</span>.
-      System design is guided by user tasks and real-world constraints such as
-      <span class="accent-strong">evidence grounding</span>, <span class="accent-strong">privacy</span>, and
-      <span class="accent-strong">efficiency</span>.
+      I have experience training and adapting small and mid-scale language models, including
+      <span class="accent-strong">1B-7B parameter models</span>, using
+      <span class="accent-strong">PyTorch DDP</span> on
+      <span class="accent-strong">Slurm-managed HPC infrastructure</span>.
+      System design is guided by real-world constraints such as
+      <span class="accent-strong">evidence grounding</span>, <span class="accent-strong">privacy</span>,
+      <span class="accent-strong">efficiency</span>, and expert oversight.
     </p>
 
     <p>
@@ -70,9 +77,11 @@ layout: default
     </p>
 
     <p>
-      I am open to collaborations that combine applied research and development of search and LLM-based systems, particularly in
-      <span class="accent-strong">healthcare</span>, <span class="accent-strong">enterprise</span>, and <span class="accent-strong">legal</span> fields.
-      I am also open to projects aligned with the technical directions and practical focus reflected in my work.
+      I am open to collaborations and technical leadership roles involving
+      <span class="accent-strong">applied AI systems</span>, particularly in
+      <span class="accent-strong">healthcare</span>, <span class="accent-strong">enterprise search</span>,
+      <span class="accent-strong">legal technology</span>, and other domains where reliability, grounding,
+      and evaluation matter.
     </p>
   </div>
 </div>
