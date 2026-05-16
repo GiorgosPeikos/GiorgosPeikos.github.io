@@ -1,13 +1,13 @@
 ---
 layout: default
 title: "Vintage Retail"
-one_liner: "A hobby retail venture used as a real world testbed for learning new skills and development of practical AI tools."
+one_liner: "A personal vintage retail hobby that gives me a practical setting to build small tools for real workflow automation."
 order: 4
 is_hobby: true
 type: case study
 status: active
 context: ["hobby"]
-impact: "Built a hobby scale retail workflow that creates fast feedback loops on customer behaviour, messaging, and lightweight automation."
+impact: "Developed tools that support my own hobby workflow, including price estimation, inventory handling, promotions, and other recurring operational tasks."
 keywords: ["applied AI", "customer experience", "marketing", "pricing", "unit economics", "automation", "experimentation", "eBay"]
 ---
 
@@ -61,18 +61,12 @@ keywords: ["applied AI", "customer experience", "marketing", "pricing", "unit ec
       <div class="muted small">
         I perform product search to identify items with resale potential before visiting flea markets and online listings. I focus on signals such as demand, rarity, and comparable sold prices.
       </div>
-      <div class="small" style="margin-top:8px;">
-        <span class="muted">Impact:</span> Improves the quality of sourcing decisions and reduces time spent on low value inventory.
-      </div>
     </div>
 
     <div class="project-card">
       <div class="item-title">Negotiation and real time deal evaluation</div>
       <div class="muted small">
         I negotiate deals in flea markets and evaluate profitability fast, considering platform fees and expected resale price.
-      </div>
-      <div class="small" style="margin-top:8px;">
-        <span class="muted">Impact:</span> Enables fast go-no-go decisions and protects margins during acquisition.
       </div>
     </div>
 
@@ -81,18 +75,12 @@ keywords: ["applied AI", "customer experience", "marketing", "pricing", "unit ec
       <div class="muted small">
         After buying, I analyse item history, details, and intended use, then create listings for online marketplaces such as eBay.
       </div>
-      <div class="small" style="margin-top:8px;">
-        <span class="muted">Impact:</span> Produces higher quality listings and clearer positioning for the target buyer.
-      </div>
     </div>
 
     <div class="project-card">
       <div class="item-title">Distribution and community based promotion</div>
       <div class="muted small">
         I identify where potential buyers are active across platforms and communities, and adapt product communication to match channel and audience expectations.
-      </div>
-      <div class="small" style="margin-top:8px;">
-        <span class="muted">Impact:</span> Expands reach beyond the marketplace search interface and improves sales velocity.
       </div>
     </div>
 

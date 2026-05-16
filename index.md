@@ -47,8 +47,8 @@ layout: default
       with a background in <span class="accent-strong">Electrical and Computer Engineering</span>.
       My work focuses on <span class="accent-strong">Large Language Models</span>,
       <span class="accent-strong">Retrieval Augmented Generation</span>, and
-      <span class="accent-strong">Information Retrieval</span>, especially for
-      <span class="accent-strong">healthcare</span> and other high-reliability domains.
+      <span class="accent-strong">Information Retrieval</span>, with applications in
+      <span class="accent-strong">healthcare</span> and other high reliability domains.
     </p>
 
     <p>
@@ -77,10 +77,10 @@ layout: default
     </p>
 
     <p>
-      I am open to collaborations and technical leadership roles involving
+      I am open to collaborations and technical roles involving the design and evaluation of
       <span class="accent-strong">applied AI systems</span>, particularly in
       <span class="accent-strong">healthcare</span>, <span class="accent-strong">enterprise search</span>,
-      <span class="accent-strong">legal technology</span>, and other domains where reliability, grounding,
+      <span class="accent-strong">legal search</span>, and other domains where reliability, grounding,
       and evaluation matter.
     </p>
   </div>
@@ -118,7 +118,7 @@ layout: default
   <h2>Programmes & Projects</h2>
 
   <p class="muted small">
-  Selected programmes and projects showing how I build and evaluate retrieval and NLP systems, with clear scope, my contributions, and links to code, papers, and prototypes when available.
+  Selected work showing how I design, build, and evaluate retrieval, NLP, and applied AI systems, with links to code, papers, and prototypes where available.
   </p>
 
   {% assign featured = site.projects | default: empty | sort: "order" %}
@@ -264,10 +264,13 @@ Scholar</a>.
   {% endfor %}
 </div>
 
-<div id="cv" class="card section">
-  <h2>CV</h2>
-  <p class="small"><a href="/assets/cv/Georgios_Peikos_CV.pdf" target="_blank" rel="noreferrer">Download CV (PDF)</a></p>
-</div>
+[//]: # (<div id="cv" class="card section">)
+
+[//]: # (  <h2>CV</h2>)
+
+[//]: # (  <p class="small"><a href="/assets/cv/Georgios_Peikos_CV.pdf" target="_blank" rel="noreferrer">Download CV &#40;PDF&#41;</a></p>)
+
+[//]: # (</div>)
 
 <div id="contact" class="card section">
   <h2>Contact</h2>
