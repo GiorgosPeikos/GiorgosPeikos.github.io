@@ -19,7 +19,7 @@ top_cited:
     authors: "Georgios Peikos, Pranav Kasela, Gabriella Pasi"
     venue: "2024 IEEE/WIC International Conference on Web Intelligence and Intelligent Agent Technology (WI-IAT)"
     year: 2024
-    citations: 9
+    citations: 10
     links:
       - label: "Semantic Scholar"
         url: "https://www.semanticscholar.org/paper/0d90ff59895aafe287ebcdafa114319428a44af2"
@@ -32,6 +32,13 @@ most_recent:
     links:
       - label: "Semantic Scholar"
         url: "https://www.semanticscholar.org/paper/16ce8272585fc1ec046c95bb43e71e52243fdeba"
+  - title: "Leveraging Cognitive Complexity of Texts for Contextualization in Dense Retrieval"
+    authors: "Effrosyni Sokli, Georgios Peikos, Pranav Kasela, Gabriella Pasi"
+    venue: "Conference on Empirical Methods in Natural Language Processing"
+    year: 2025
+    links:
+      - label: "Semantic Scholar"
+        url: "https://www.semanticscholar.org/paper/b92cb92e7798282625d78db016c7bf089020e102"
   - title: "ASPIRE: Assistive System for Performance Evaluation in IR"
     authors: "Georgios Peikos, Wojciech Kusa, Symeon Symeonidis"
     venue: "European Conference on Information Retrieval"
@@ -39,12 +46,5 @@ most_recent:
     links:
       - label: "Semantic Scholar"
         url: "https://www.semanticscholar.org/paper/9572f99eba993f1e768850c4073b2a9d14fae44f"
-  - title: "A Decision-Theoretic Framework to Multidimensional Relevance Estimation"
-    authors: "Georgios Peikos, Gabriella Pasi"
-    venue: "International Journal of Information Technology &amp; Decision Making"
-    year: 2025
-    links:
-      - label: "Semantic Scholar"
-        url: "https://www.semanticscholar.org/paper/a1c5a98aac5bec1e6e916cf69ceca72a3579d49f"
 
-# updated: 2026-05-25T11:08:09.778487Z
+# updated: 2026-06-08T11:54:52.767908Z
