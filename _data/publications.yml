@@ -11,7 +11,7 @@ top_cited:
     authors: "Arian Askari, Georgios Peikos, G. Pasi, Suzan Verberne"
     venue: "arXiv.org"
     year: 2022
-    citations: 13
+    citations: 14
     links:
       - label: "Semantic Scholar"
         url: "https://www.semanticscholar.org/paper/5e0bf5d58b224c6261cc714139a54681a7917149"
@@ -25,6 +25,13 @@ top_cited:
         url: "https://www.semanticscholar.org/paper/0d90ff59895aafe287ebcdafa114319428a44af2"
 
 most_recent:
+  - title: "CTCL: A Cross-Language Benchmark for Matching Patients to Clinical Trials"
+    authors: "Maciej Rybiński, Wojciech Kusa, Necva Bölücü, Georgios Peikos, Aditya Joshi, Sarvnaz Karimi"
+    venue: "Proceedings of the 49th International ACM SIGIR Conference on Research and Development in Information Retrieval"
+    year: 2026
+    links:
+      - label: "Semantic Scholar"
+        url: "https://www.semanticscholar.org/paper/771d96e2e326261fbed4dd9d7948ee1da7a8b02d"
   - title: "Fact-Driven Health Information Retrieval: Integrating LLMs and Knowledge Graphs to Combat Misinformation"
     authors: "Gian Carlo Milanese, Georgios Peikos, Gabriella Pasi, Marco Viviani"
     venue: "European Conference on Information Retrieval"
@@ -39,12 +46,5 @@ most_recent:
     links:
       - label: "Semantic Scholar"
         url: "https://www.semanticscholar.org/paper/b92cb92e7798282625d78db016c7bf089020e102"
-  - title: "ASPIRE: Assistive System for Performance Evaluation in IR"
-    authors: "Georgios Peikos, Wojciech Kusa, Symeon Symeonidis"
-    venue: "European Conference on Information Retrieval"
-    year: 2025
-    links:
-      - label: "Semantic Scholar"
-        url: "https://www.semanticscholar.org/paper/9572f99eba993f1e768850c4073b2a9d14fae44f"
 
-# updated: 2026-07-13T10:22:01.371636Z
+# updated: 2026-07-20T09:57:03.570373Z
