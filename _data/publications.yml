@@ -19,7 +19,7 @@ top_cited:
     authors: "Georgios Peikos, Pranav Kasela, Gabriella Pasi"
     venue: "2024 IEEE/WIC International Conference on Web Intelligence and Intelligent Agent Technology (WI-IAT)"
     year: 2024
-    citations: 10
+    citations: 11
     links:
       - label: "Semantic Scholar"
         url: "https://www.semanticscholar.org/paper/0d90ff59895aafe287ebcdafa114319428a44af2"
@@ -47,4 +47,4 @@ most_recent:
       - label: "Semantic Scholar"
         url: "https://www.semanticscholar.org/paper/b92cb92e7798282625d78db016c7bf089020e102"
 
-# updated: 2026-07-20T09:57:03.570373Z
+# updated: 2026-07-27T10:39:16.363330Z
