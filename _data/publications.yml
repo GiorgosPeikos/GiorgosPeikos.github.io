@@ -19,7 +19,7 @@ top_cited:
     authors: "Georgios Peikos, Pranav Kasela, Gabriella Pasi"
     venue: "2024 IEEE/WIC International Conference on Web Intelligence and Intelligent Agent Technology (WI-IAT)"
     year: 2024
-    citations: 11
+    citations: 12
     links:
       - label: "Semantic Scholar"
         url: "https://www.semanticscholar.org/paper/0d90ff59895aafe287ebcdafa114319428a44af2"
@@ -27,7 +27,7 @@ top_cited:
 most_recent:
   - title: "CTCL: A Cross-Language Benchmark for Matching Patients to Clinical Trials"
     authors: "Maciej Rybiński, Wojciech Kusa, Necva Bölücü, Georgios Peikos, Aditya Joshi, Sarvnaz Karimi"
-    venue: "Proceedings of the 49th International ACM SIGIR Conference on Research and Development in Information Retrieval"
+    venue: "Annual International ACM SIGIR Conference on Research and Development in Information Retrieval"
     year: 2026
     links:
       - label: "Semantic Scholar"
@@ -47,4 +47,4 @@ most_recent:
       - label: "Semantic Scholar"
         url: "https://www.semanticscholar.org/paper/b92cb92e7798282625d78db016c7bf089020e102"
 
-# updated: 2026-08-03T10:39:34.875832Z
+# updated: 2026-08-10T08:24:14.525806Z
