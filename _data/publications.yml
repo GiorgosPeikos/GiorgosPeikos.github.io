@@ -3,7 +3,7 @@ top_cited:
     authors: "Georgios Peikos, Symeon Symeonidis, Pranav Kasela, G. Pasi"
     venue: "arXiv.org"
     year: 2023
-    citations: 19
+    citations: 20
     links:
       - label: "Semantic Scholar"
         url: "https://www.semanticscholar.org/paper/362d4e00506f9bb39d42185a0b128f8602e139a8"
@@ -19,7 +19,7 @@ top_cited:
     authors: "Georgios Peikos, Pranav Kasela, Gabriella Pasi"
     venue: "2024 IEEE/WIC International Conference on Web Intelligence and Intelligent Agent Technology (WI-IAT)"
     year: 2024
-    citations: 12
+    citations: 13
     links:
       - label: "Semantic Scholar"
         url: "https://www.semanticscholar.org/paper/0d90ff59895aafe287ebcdafa114319428a44af2"
@@ -32,13 +32,6 @@ most_recent:
     links:
       - label: "Semantic Scholar"
         url: "https://www.semanticscholar.org/paper/771d96e2e326261fbed4dd9d7948ee1da7a8b02d"
-  - title: "Fact-Driven Health Information Retrieval: Integrating LLMs and Knowledge Graphs to Combat Misinformation"
-    authors: "Gian Carlo Milanese, Georgios Peikos, Gabriella Pasi, Marco Viviani"
-    venue: "European Conference on Information Retrieval"
-    year: 2025
-    links:
-      - label: "Semantic Scholar"
-        url: "https://www.semanticscholar.org/paper/16ce8272585fc1ec046c95bb43e71e52243fdeba"
   - title: "Leveraging Cognitive Complexity of Texts for Contextualization in Dense Retrieval"
     authors: "Effrosyni Sokli, Georgios Peikos, Pranav Kasela, Gabriella Pasi"
     venue: "Conference on Empirical Methods in Natural Language Processing"
@@ -46,5 +39,12 @@ most_recent:
     links:
       - label: "Semantic Scholar"
         url: "https://www.semanticscholar.org/paper/b92cb92e7798282625d78db016c7bf089020e102"
+  - title: "Fact-Driven Health Information Retrieval: Integrating LLMs and Knowledge Graphs to Combat Misinformation"
+    authors: "Gian Carlo Milanese, Georgios Peikos, Gabriella Pasi, Marco Viviani"
+    venue: "European Conference on Information Retrieval"
+    year: 2025
+    links:
+      - label: "Semantic Scholar"
+        url: "https://www.semanticscholar.org/paper/16ce8272585fc1ec046c95bb43e71e52243fdeba"
 
-# updated: 2026-10-05T15:31:23.834028Z
+# updated: 2026-10-12T16:27:52.367512Z
