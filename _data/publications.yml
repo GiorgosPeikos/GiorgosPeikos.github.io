@@ -3,7 +3,7 @@ top_cited:
     authors: "Arian Askari, Georgios Peikos, G. Pasi, Suzan Verberne"
     venue: "arXiv.org"
     year: 2022
-    citations: 44
+    citations: 45
     links:
       - label: "Semantic Scholar"
         url: "https://www.semanticscholar.org/paper/5e0bf5d58b224c6261cc714139a54681a7917149"
@@ -25,6 +25,13 @@ top_cited:
         url: "https://www.semanticscholar.org/paper/0d90ff59895aafe287ebcdafa114319428a44af2"
 
 most_recent:
+  - title: "MedCascade: A Multi-Stage Cascaded Retrieval and Generation System for Biomedical Question Answering"
+    authors: "Artem Avdeiko, Pelinsu Topaloglu, Teresa Vaccari, Georgios Peikos"
+    venue: "Conference and Labs of the Evaluation Forum"
+    year: 2026
+    links:
+      - label: "Semantic Scholar"
+        url: "https://www.semanticscholar.org/paper/fa090d58e3dac25cac6a9aea8b07a4fe3a242de4"
   - title: "CTCL: A Cross-Language Benchmark for Matching Patients to Clinical Trials"
     authors: "Maciej Rybiński, Wojciech Kusa, Necva Bölücü, Georgios Peikos, Aditya Joshi, Sarvnaz Karimi"
     venue: "Annual International ACM SIGIR Conference on Research and Development in Information Retrieval"
@@ -32,19 +39,12 @@ most_recent:
     links:
       - label: "Semantic Scholar"
         url: "https://www.semanticscholar.org/paper/771d96e2e326261fbed4dd9d7948ee1da7a8b02d"
-  - title: "Leveraging Cognitive Complexity of Texts for Contextualization in Dense Retrieval"
-    authors: "Effrosyni Sokli, Georgios Peikos, Pranav Kasela, Gabriella Pasi"
-    venue: "Conference on Empirical Methods in Natural Language Processing"
-    year: 2025
+  - title: "Automatic Reference Scanner and Explainer: Don't Get Caught with Dirty References"
+    authors: "Moritz Staudinger, Wojciech Kusa, Georgios Peikos, Allan Hanbury"
+    venue: "Proceedings of the 35th ACM International Conference on Information and Knowledge Management"
+    year: 2026
     links:
       - label: "Semantic Scholar"
-        url: "https://www.semanticscholar.org/paper/b92cb92e7798282625d78db016c7bf089020e102"
-  - title: "Fact-Driven Health Information Retrieval: Integrating LLMs and Knowledge Graphs to Combat Misinformation"
-    authors: "Gian Carlo Milanese, Georgios Peikos, Gabriella Pasi, Marco Viviani"
-    venue: "European Conference on Information Retrieval"
-    year: 2025
-    links:
-      - label: "Semantic Scholar"
-        url: "https://www.semanticscholar.org/paper/16ce8272585fc1ec046c95bb43e71e52243fdeba"
+        url: "https://www.semanticscholar.org/paper/c04b62af0ba3a3994f669c468a883ce4c83af8bb"
 
-# updated: 2026-11-02T16:47:49.497327Z
+# updated: 2026-11-09T17:07:20.924466Z
