@@ -15,14 +15,14 @@ top_cited:
     links:
       - label: "Semantic Scholar"
         url: "https://www.semanticscholar.org/paper/362d4e00506f9bb39d42185a0b128f8602e139a8"
-  - title: "Leveraging Large Language Models for Medical Information Extraction and Query Generation"
-    authors: "Georgios Peikos, Pranav Kasela, Gabriella Pasi"
-    venue: "2024 IEEE/WIC International Conference on Web Intelligence and Intelligent Agent Technology (WI-IAT)"
+  - title: "A systematic review of multidimensional relevance estimation in information retrieval"
+    authors: "Georgios Peikos, Gabriella Pasi"
+    venue: "WIREs Data. Mining. Knowl. Discov."
     year: 2024
-    citations: 13
+    citations: 14
     links:
       - label: "Semantic Scholar"
-        url: "https://www.semanticscholar.org/paper/0d90ff59895aafe287ebcdafa114319428a44af2"
+        url: "https://www.semanticscholar.org/paper/e99e6c283b452a946061107e152ccdabf7e6ed04"
 
 most_recent:
   - title: "MedCascade: A Multi-Stage Cascaded Retrieval and Generation System for Biomedical Question Answering"
@@ -47,4 +47,4 @@ most_recent:
       - label: "Semantic Scholar"
         url: "https://www.semanticscholar.org/paper/c04b62af0ba3a3994f669c468a883ce4c83af8bb"
 
-# updated: 2026-11-09T17:07:20.924466Z
+# updated: 2026-11-16T16:43:25.951491Z
